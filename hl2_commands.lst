@@ -1,0 +1,230 @@
+//////////////
+// CHEATS
+//////////////
+
+
+sv_cheats 1 							Activates Cheats
+God 									God Mode (Server side only)
+buddha 									Health never goes below 1
+Hurtme # 								Damages player by whatever variable you input as #
+Kill 									You die.
+notarget 								Invisible to NPC's
+noclip 									Ability to walk through walls (Server Side Only)
+notarget 								enemies can't see you
+sv_unlockedchapters # 					unlocks chapters 1 thru # (15 is end credits)
+
+
+//////////////
+// GUNS
+//////////////
+
+
+impulse 101 							All Weapons
+give # 									Give weapon (Input weapon name in place of #)
+give weapon_shotgun 					Recieve a Shotgun
+give weapon_357 						.357 Magnum
+give weapon_ar2 						Overwatch Standard Issue Pulse Rifle
+give weapon_bugbait 					Pherapods
+give weapon_crossbow 					Crossbow
+give weapon_crowbar 					Crowbar
+give weapon_frag 						Fragmentation Grenade
+give weapon_portalgun 					Gives you the basic portal gun.
+upgrade_portalgun 						Used without portal gun: Gives a portal gun. Used with a basic portal gun:
+										Gives full portal gun.
+give weapon_physcannon 					Zero Point Energy Field Manipulator Gun
+physcannon_megacannon 1 				Makes your Gravity Gun a Super Gravity Gun
+give weapon_pistol 						9mm Pistol
+give weapon_rpg 						Rocket-Propelled Grenade Launcher
+give weapon_shotgun 					12-Gauge Shotgun
+give weapon_smg1 						Submachine Gun
+give weapon_annabelle 					gives you Father Gregori's modified shotgun
+give item_suit 							Gives you the HEV Suit
+//////////////
+give item_battery 						Increases suit charge by 15 points.
+give item_ammo_357 						Spawns ammo for the .357 magnum
+give item_ammo_crossbow 				Spawns ammo for the crossbow
+give item_box_mrounds 					Spawns primary fire ammo for the submachinegun
+give item_ar2_grenade 					Spawns grenades for the submachinegun
+give item_rpg_round  					Spawns grenades for the RPG
+give item_ml_grenade					Spawns grenades for the RPG
+give item_box_srounds 					Spawns ammo for the 9mm pistol
+give item_ammo_ar2 						Spawns primary fire ammo for the Overwatch Pulse Rifle
+give item_box_buckshot 					Spawns shells for the 12-gauge shotgun
+give item_ammo_ar2_altfire 				Spawns energy grenade for the Overwatch Pulse Rifle
+item_healthvial 						Gives you the small health vial (10HP)
+item_healthkit 							Gives you the large health kit (25HP)
+sv_infinite_aux_power 1 				Gives infinite power for sprinting, etc.
+
+
+sk_max_357 # 							# is new max ammo for .357 Magnum
+sk_max_ar2 # 							# is new max ammo for Pulse Rifle
+sk_max_ar2_altfire # 					# is new max ammo for Pulse Rifle energy orbs
+sk_max_buckshot # 						# is new max ammo for shotgun
+sk_max_crossbow # 						# is new max ammo for crossbow
+sk_max_grenade # 						# is new max ammo for hand grenades
+sk_max_pistol # 						# is new max ammo for pistol
+sk_max_rpg_round #					 	# is new max ammo for RPG
+sk_max_smg1 # 							# is new max ammo for submachine gun
+sk_max_smg1_grenade # 					# is new max ammo for SMG grenades
+physcannon_maxforce # 					Changes how hard you propel objects (Default is 1500)
+physcannon_maxmass # 					Changes how large pulled objects can be (Default is 250)
+physcannon_pullforce # 					Changes how quickly objects are pulled (Default is 4000)
+physcannon_tracelength # 				Changes the length that objects can be pulled from (Default is 250)
+physcannon_cone # 						Changes the radius of the cone used to pick up objects (Default is 0)
+sv_maxvelocity # 						Sets Maximum Velocity of any moving object (Add number in place of #)
+sv_portal_placement_never_fail # 		Place portals anywhere (1 or 0)
+change_portalgun_linkage_id #  			Changes the portal linkage ID for the portal gun held by the commanding 
+										player.(0, 1, 2, 3)
+//////////////
+sk_plr_dmg_pistol # 					# is new damage value for pistol (Default is 5)
+sk_plr_dmg_357 # 						# is new damage value for .357 Magnum (Default is 40)
+sk_plr_dmg_ar2 # 						# is new damage value for Pulse Rifle (Default is 8)
+sk_plr_dmg_buckshot # 					# is new damage value for shotgun (Default is 8)
+sk_plr_num_shotgun_pellets # 			Increases pellets fired from each shotgun shell. 100 works well, 1000+ lags.
+										(Default is 7)
+sk_plr_dmg_buckshot # 					Raises damage done by each pellet. (Default is 8)
+sk_plr_dmg_crossbow # 					# is new damage value for crossbow (Default is 100)
+sk_plr_dmg_crowbar # 					# is new damage value for crowbar (Default is 10)
+sk_plr_dmg_grenade # 					# is new damage value for grenades (Default is 150)
+sk_plr_dmg_rpg_round # 					# is new damage value for RPG rockets (Default is 100)
+sk_plr_dmg_smg1 # 						# is new damage value for submachine gun (Default is 4)
+sk_plr_dmg_smg1_grenade # 				# is new damage value for SMG grenades (Default is 100)
+sk_plr_dmg_alyxgun #					# is new damage value for Alyx's custom gun (Default is 5)
+sk_plr_dmg_fraggrenade #				# is new damage value for frag grenades (Default is 125)    
+sk_plr_dmg_grenade #  					# is new damage value for grenades (Default is 150) 
+---
+sk_npc_dmg_shotgun # 					NPC's do # damage with shotgun
+sk_npc_dmg_smg1 # 						NPC's do # damage with the smg (Default is 3)
+sk_npc_dmg_ar2 # 						NPC's do # damage with the pulse rifle
+
+
+//////////////
+// OBJECTS
+//////////////
+
+
+impulse 203 							removes the item or NPC pointed at
+ent_create_portal_weight_box 			Create a Weighted Storage Cube
+ent_create_portal_metal_sphere 			Bouncy metal ball
+impulse 82 								Spawn a Jeep
+ch_createjeep 							Make a jeep
+impulse 83 								Spawn an Air Boat
+ch_createairboat 						Makes an airboat
+npc_create 								Creates an NPC
+npc_create npc_breen 					The man breen
+npc_create npc_zombie 					Zombie (They attack citizens,turrets,and you)
+npc_create npc_citizen 					Spawn a citizen
+npc_create npc_headcrab 				Spawn (live) Headcrab
+npc_create npc_gman 					Spawn Gman with suitcase and never dies
+npc_create npc_barnacle 				Spawn Barnacle
+npc_create npc_combine_s 				Spawn Combine Soldier
+npc_create npc_alyx 					spawn alyx
+npc_create npc_metropolice 				Spawn Metropoliceman
+npc_create npc_portal_turret_floor 		Spawns a standing turret
+npc_create_aimed 						Creates an NPC (Aiming away from player)
+npc_create_equipment weapon_shotgun 	NPC spawns equipped with a shotgun.
+npc_create_equipment weapon_smg1 		NPC spawns equipped with a SMG.
+npc_create_equipment weapon_ar2 		NPC spawns equipped with a pulse rifle.
+npc_create_equipment weapon_crowbar 	NPC spawns equipped with a crowbar.
+npc_create_equipment weapon_RPG 		NPC spawns equipped with a RPG rocket launcher.
+ai_disable 								toggles enemy AI on/off
+
+
+//////////////
+// VIEW
+//////////////
+
+
+status 									shows some game info, incl. current map
+viewmodel_fov # 						Adjusts size of the weapon you're carrying (54 = default)
+exec # 									Execute a script file (Input filename in place of #)
+hud_quickhelp/text? 1 					Shows Crosshairs
+crosshair 0 							Disables Crosshair
+cl_drawhud 1 							Toggle HUD display On (0 turns off)
+cl_enablehud 1					 		Toggle HUD display On (0 turns off)
+cl_showfps 1 							Shows FPS Rate
+net_graph 1 							a more thorough fps display
+mat_depthbias_normal 1 					See through walls
+mat_fullbright 1 						removes all shadows (0 restores them)
+mat_yuv 0 								Enables Color Mode
+mat_yuv 1 								black-and-white mode
++mlook 									Enables mouse look
+r_screenoverlay effects/combine_binocoverlay.vmt 	Gives you combine vision during gameplay.
+r_screenoverlay effects/tp_eyefx/tp_eyefx.vmt 		Gives you weird vision during gameplay.
+getpos 									Can be used to get current coords for use with setpos
+setpos 									Move player to specified origin
+cl_showpos 1 							brings up position display in top right of screen (0 removes it)
+Developer # 							Sets developer mode to on/off/verbose (0-off, 1-on, 2-verbose)
+thirdperson 							Third Person View
+firstperson 							First Person View
+
+
+//////////////
+// ENVIRONMENT
+//////////////
+
+shake 									Creates an earthquake.
+sv_gravity #  							Lets you change the gravity in the game (600=normal(at least in Portal))
+sv_stopspeed #						 	Set Minimum Stopping Speed on ground (Add number in place of #)
+sv_friction # 							Set World Friction (Add number in place of #)
+sv_bounce # 							Sets bounce multiplier for physically simulated object collisions
+sv_maxvelocity # 						Sets Maximum Velocity of any moving object (Add number in place of #)
+sv_waterdist # 							Set Vertical View when eyes are near water plane.
+air_density # 							Change the density of air. (Add number in place of #)
+host_timescale # 						Changes speed of game (slow-mo/fast-mo) (# < 1 = slower, # > 1 = faster)
+host_timescale # (default=1) 			Changes speed of game, 0.1 = 10% of original game speed, 2 = twice the
+										original game speed
+maps 									Displays Map listing
+maps*									Displays Map listing (Portal)
+Map # 									Load Map (Input title in place of #)
+skill # 								change skill level (# = 1, 2, or 3)
+cl_ragdoll_collide 1 					Enables ragdolls that don't clip through each other, but stack 
+										realistically on one another
+
+
+//////////////
+// OTHER
+//////////////
+
+
+picker 									Toggles Picker mode on
+setang 									Snap players eyes to a specified pitch yaw
+dsp_explosion_effect_duration # 		Set length of confusion/ear-ringing effect(Add number in place of #)
+prop_debug 								Toggle bounding-boxes debug mode on/off red - ignore damage, white -										respond to damage, green - health)
+sv_soundemitter_filecheck			 	Toggle reporting missing .wav files for sounds
+mat_numtextureunits #				 	Limit the number of texture units. (Add number in place of #) (0=Default)
+impulse 76 								Grunt-O-Matic
+help $ 									replace $ with a command to get a brief description of it
+fire_energy_ball 						Fires an energy ball out of your face.
+fire_rocket_projectile 					Fires a rocket out of your face. (Bugged)
+maxplayers								Maximum amount of playes allowed
+setmodel								allows you to change model ingame
+sk_combine_guard_health  70  			Enemy health
+sk_metropolice_health  40  
+sk_zombie_health  50 
+sk_zombie_dmg_both_slash  25     
+sk_zombie_dmg_one_slash  10  
+bulletspeed 							Default 6000
+hl2_normspeed  190     
+hl2_sprintspeed  320     
+hl2_walkspeed  150  
+
+
+
+// What are these?
+
+sk_npc_arm 
+sk_npc_chest 
+sk_npc_head 
+sk_npc_leg 
+sk_npc_stomach 
+sk_player_arm 
+sk_player_chest 
+sk_player_head 
+sk_player_leg 
+physcannon_chargetime  (Default is 2)
+
+
+
+
+
