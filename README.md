@@ -2,4 +2,4 @@
 
 # SourceGameScripts
 Scripts for Valve (Steam) games to improve performance and/or change the eperience.
-Files are named based on the applicable game and usage.
+Files are named based on the applicable game and usage. Files prefixed by "source_" are agnostic and may work with any game.
