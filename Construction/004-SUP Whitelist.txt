@@ -1,0 +1,21 @@
+"TableToKeyValues"
+{
+	"parentid"		"0"
+	"icon"		"icon16/tux.png"
+	"id"		"4"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"model"
+			"model"		"models/props_lab/blastdoor001c.mdl"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/balloons/balloon_star.mdl"
+		}
+	}
+	"name"		"SUP Whitelist"
+	"version"		"3"
+}
