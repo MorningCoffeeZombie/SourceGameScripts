@@ -2,98 +2,98 @@
 
 <ppm-export-template sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.file.FileManager" name="004-SUP Whitelist" version="10">
   <template>
-    <modules_content_type>txt</modules_content_type>
-    <fileEncoding>UTF-8</fileEncoding>
-    <formatMap></formatMap>
-    <history></history>
-    <remarks>Template for constructing export profiles.</remarks>
-    <exportloglevel>8</exportloglevel>
-    <purpose>EXPORT</purpose>
+	<modules_content_type>txt</modules_content_type>
+	<fileEncoding>UTF-8</fileEncoding>
+	<formatMap></formatMap>
+	<history></history>
+	<remarks>Template for constructing export profiles.</remarks>
+	<exportloglevel>8</exportloglevel>
+	<purpose>EXPORT</purpose>
   </template>
   <changelog>
-    <created byintid="300" byid="rmj" byname="rmj" datetime="1536603956427"/>
-    <lastchanged byintid="1" byid="Administrator" byname="Administrator" datetime="1547652312436"/>
+	<created byintid="300" byid="drderp" byname="drderp" datetime="1536603956427"/>
+	<lastchanged byintid="1" byid="Administrator" byname="Administrator" datetime="1547652312436"/>
   </changelog>
   <functionManager sys-id="1" factory-id="hlr.texttemplate.FunctionManager.factory" context="export"/>
   <alias>
-    <aliasfield name="Item.Item Num" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="Article.SupplierAID" identifier="Article.SupplierAID9c25680b2570dac3:-76e9127f:165c37311a0:-7a29" name="%field.Article.SupplierAID.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleType.SupplierAid"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleType" revision-token="1"/></field-path></field>]]></aliasfield>
-    <aliasfield name="Item.Meta Description" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="TradeDirectionF.MetaDescription" identifier="TradeDirectionF.MetaDescriptione60f527ce9d7f7e7:49f0e8d4:1684e767dee:-7d8d" name="%field.TradeDirectionF.MetaDescription.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleTradingType.Res_Text250_01"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleTradingType" revision-token="1"><logical-key type="ArticleTradingType.LK.Classifier" value="F"/><logical-key type="ArticleTradingType.LK.PartyMS" value="3[|][|]Party[|]"/><logical-key-filter type="ArticleTradingType.LK.PartyMS"><filter-enum>Enum.SupplierWithMainSupplier</filter-enum></logical-key-filter></entity-path></field-path></field>]]></aliasfield>
+	<aliasfield name="Item.Item Num" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="Article.SupplierAID" identifier="Article.SupplierAID9c25680b2570dac3:-76e9127f:165c37311a0:-7a29" name="%field.Article.SupplierAID.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleType.SupplierAid"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleType" revision-token="1"/></field-path></field>]]></aliasfield>
+	<aliasfield name="Item.Meta Description" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="TradeDirectionF.MetaDescription" identifier="TradeDirectionF.MetaDescriptione60f527ce9d7f7e7:49f0e8d4:1684e767dee:-7d8d" name="%field.TradeDirectionF.MetaDescription.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleTradingType.Res_Text250_01"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleTradingType" revision-token="1"><logical-key type="ArticleTradingType.LK.Classifier" value="F"/><logical-key type="ArticleTradingType.LK.PartyMS" value="3[|][|]Party[|]"/><logical-key-filter type="ArticleTradingType.LK.PartyMS"><filter-enum>Enum.SupplierWithMainSupplier</filter-enum></logical-key-filter></entity-path></field-path></field>]]></aliasfield>
   </alias>
   <variables>
-    <variable id="today" name="today" datatype="DataTypeDateTime" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="1">
-      <description><![CDATA[]]></description>
-      <value><![CDATA[]]></value>
-    </variable>
-    <variable id="language" name="language" datatype="DataTypeLanguage" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="1">
-      <description><![CDATA[]]></description>
-      <value><![CDATA[]]></value>
-    </variable>
+	<variable id="today" name="today" datatype="DataTypeDateTime" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="1">
+	  <description><![CDATA[]]></description>
+	  <value><![CDATA[]]></value>
+	</variable>
+	<variable id="language" name="language" datatype="DataTypeLanguage" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="1">
+	  <description><![CDATA[]]></description>
+	  <value><![CDATA[]]></value>
+	</variable>
   </variables>
   <dataproviders>
-    <dataprovider name="Item list" id="1536582492586" typeid="ArticleList" sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.dataprovider.Parameter">
-      <parameter id="catalog" name="Catalog" datatype="DataTypeCatalogWithNotSpecifiedValue" mandatory="true" editable="false" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
-        <description><![CDATA[A supplier catalog or the master catalog]]></description>
-        <value><![CDATA[1[|]MASTER[|]MasterCatalog[|]]]></value>
-      </parameter>
-      <parameter id="assortment" name="Assortment" datatype="DataTypeArticleAssortment" mandatory="false" editable="true" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
-        <description><![CDATA[An item assortment or a list of items]]></description>
-        <value><![CDATA[assortmentProxy:128[|][|]ArticleAssortment]]></value>
-      </parameter>
-      <parameter id="updateAssortment" name="Update assortment" datatype="DataTypeBoolean" mandatory="false" editable="false" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
-        <description><![CDATA[Do you want to update the assigned assortment directly before the export?
+	<dataprovider name="Item list" id="1536582492586" typeid="ArticleList" sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.dataprovider.Parameter">
+	  <parameter id="catalog" name="Catalog" datatype="DataTypeCatalogWithNotSpecifiedValue" mandatory="true" editable="false" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
+		<description><![CDATA[A supplier catalog or the master catalog]]></description>
+		<value><![CDATA[1[|]MASTER[|]MasterCatalog[|]]]></value>
+	  </parameter>
+	  <parameter id="assortment" name="Assortment" datatype="DataTypeArticleAssortment" mandatory="false" editable="true" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
+		<description><![CDATA[An item assortment or a list of items]]></description>
+		<value><![CDATA[assortmentProxy:128[|][|]ArticleAssortment]]></value>
+	  </parameter>
+	  <parameter id="updateAssortment" name="Update assortment" datatype="DataTypeBoolean" mandatory="false" editable="false" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
+		<description><![CDATA[Do you want to update the assigned assortment directly before the export?
 This parameter is only effective with non-static item assortments.]]></description>
-        <value><![CDATA[1]]></value>
-      </parameter>
-      <parameter id="ArticleListDataProvider.revision" name="Version" datatype="DataTypeRevision" mandatory="true" editable="false" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
-        <description><![CDATA[Version of exported data]]></description>
-        <value><![CDATA[1]]></value>
-      </parameter>
-    </dataprovider>
+		<value><![CDATA[1]]></value>
+	  </parameter>
+	  <parameter id="ArticleListDataProvider.revision" name="Version" datatype="DataTypeRevision" mandatory="true" editable="false" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
+		<description><![CDATA[Version of exported data]]></description>
+		<value><![CDATA[1]]></value>
+	  </parameter>
+	</dataprovider>
   </dataproviders>
   <exportpoststeps>
-    <exportpoststep name="Copy export file" id="CopyFile" sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.dataprovider.Parameter">
-      <parameter id="destinationFile" name="Target directory" datatype="DataTypeString" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
-        <description><![CDATA[Directory for target file. If it is a single export file, the file name is also taken into account, i.e. the file is saved under a different name.]]></description>
-        <value><![CDATA[E:\PIMServerScripts\TransferToRemoteServers\UserGeneratedExports\]]></value>
-      </parameter>
-      <parameter id="overwriteExistingFile" name="Overwrite existing file" datatype="DataTypeBoolean" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
-        <description><![CDATA[Specifies if an existing file should be overwritten. If "No" is specified, the current file will be renamed. The default is "Yes".]]></description>
-        <value><![CDATA[0]]></value>
-      </parameter>
-      <parameter id="renameFileInCaseOfConcurrencyProblem" name="Rename file in case of error" datatype="DataTypeBoolean" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
-        <description><![CDATA[In case of an error by concurrent file access the file can be renamed to solve the problem. The default is "No".]]></description>
-        <value><![CDATA[1]]></value>
-      </parameter>
-      <parameter id="PARAM_CANCEL_IN_ERROR_CASE" name="Cancel export in case of error" datatype="DataTypeBoolean" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
-        <description><![CDATA[Specifies if the export run should be canceled if an error occurs during the post-export step processing, or if errors should only be logged.]]></description>
-        <value><![CDATA[0]]></value>
-      </parameter>
-    </exportpoststep>
+	<exportpoststep name="Copy export file" id="CopyFile" sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.dataprovider.Parameter">
+	  <parameter id="destinationFile" name="Target directory" datatype="DataTypeString" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
+		<description><![CDATA[Directory for target file. If it is a single export file, the file name is also taken into account, i.e. the file is saved under a different name.]]></description>
+		<value><![CDATA[E:\PIMServerScripts\TransferToRemoteServers\UserGeneratedExports\]]></value>
+	  </parameter>
+	  <parameter id="overwriteExistingFile" name="Overwrite existing file" datatype="DataTypeBoolean" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
+		<description><![CDATA[Specifies if an existing file should be overwritten. If "No" is specified, the current file will be renamed. The default is "Yes".]]></description>
+		<value><![CDATA[0]]></value>
+	  </parameter>
+	  <parameter id="renameFileInCaseOfConcurrencyProblem" name="Rename file in case of error" datatype="DataTypeBoolean" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
+		<description><![CDATA[In case of an error by concurrent file access the file can be renamed to solve the problem. The default is "No".]]></description>
+		<value><![CDATA[1]]></value>
+	  </parameter>
+	  <parameter id="PARAM_CANCEL_IN_ERROR_CASE" name="Cancel export in case of error" datatype="DataTypeBoolean" mandatory="true" editable="false" many="false" hosttype="exportPostStep" hostobject="Copy export file" reftype="" refobject="">
+		<description><![CDATA[Specifies if the export run should be canceled if an error occurs during the post-export step processing, or if errors should only be logged.]]></description>
+		<value><![CDATA[0]]></value>
+	  </parameter>
+	</exportpoststep>
   </exportpoststeps>
   <exportfileconfiguration advanced="false">
-    <defaultfilesettings class="com.heiler.ppm.export.core.file.DefaultExportFileSettings"/>
+	<defaultfilesettings class="com.heiler.ppm.export.core.file.DefaultExportFileSettings"/>
   </exportfileconfiguration>
   <modules sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.export.core.model.ExportTemplateModule">
-    <module name="initializeCounters" id="1536603956427">
-      <datatype type="">
-        <datatype_params/>
-      </datatype>
-      <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1536603956427" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
-      <content><![CDATA[{?NumberSet "countItems", "0"}{?NumberSet "currentItemCount", "0"}]]></content>
-    </module>
-    <module name="beginCounting" id="1537390868490">
-      <datatype type="">
-        <datatype_params/>
-      </datatype>
-      <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1537390868490" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
-      <content><![CDATA[{?NumberIncrement "countItems", 1}]]></content>
-    </module>
-    <module name="header" id="1537390876947">
-      <datatype type="">
-        <datatype_params/>
-      </datatype>
-      <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1537390876947" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
-      <content><![CDATA["TableToKeyValues"
+	<module name="initializeCounters" id="1536603956427">
+	  <datatype type="">
+		<datatype_params/>
+	  </datatype>
+	  <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1536603956427" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
+	  <content><![CDATA[{?NumberSet "countItems", "0"}{?NumberSet "currentItemCount", "0"}]]></content>
+	</module>
+	<module name="beginCounting" id="1537390868490">
+	  <datatype type="">
+		<datatype_params/>
+	  </datatype>
+	  <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1537390868490" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
+	  <content><![CDATA[{?NumberIncrement "countItems", 1}]]></content>
+	</module>
+	<module name="header" id="1537390876947">
+	  <datatype type="">
+		<datatype_params/>
+	  </datatype>
+	  <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1537390876947" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
+	  <content><![CDATA["TableToKeyValues"
 {
 	"parentid"		"0"
 	"icon"		"icon16/tux.png"
@@ -101,33 +101,33 @@ This parameter is only effective with non-static item assortments.]]></descripti
 	"contents"
 	{
 ]]></content>
-    </module>
-    <module name="run" id="1536603964743" dataprovider="1536582492586">
-      <datatype type="DataTypeArticleAssortment">
-        <datatype_params/>
-      </datatype>
-      <sort_config sys-id="1" factory-id="com.heiler.ppm.texttemplate.core.sorting.sortConfiguration.factory">
-        <sort_criterion sys-id="2" factory-id="com.heiler.ppm.texttemplate.core.sorting.sortCriterion.factory" order="asc">
-          <aliasname>Item.Item Num</aliasname>
-        </sort_criterion>
-      </sort_config>
-      <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1536603964743" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
-      <content><![CDATA[{?NumberIncrement "currentItemCount", 1}		"{?Calculate "{?LoopCounter}+1","","0"}"
+	</module>
+	<module name="run" id="1536603964743" dataprovider="1536582492586">
+	  <datatype type="DataTypeArticleAssortment">
+		<datatype_params/>
+	  </datatype>
+	  <sort_config sys-id="1" factory-id="com.heiler.ppm.texttemplate.core.sorting.sortConfiguration.factory">
+		<sort_criterion sys-id="2" factory-id="com.heiler.ppm.texttemplate.core.sorting.sortCriterion.factory" order="asc">
+		  <aliasname>Item.Item Num</aliasname>
+		</sort_criterion>
+	  </sort_config>
+	  <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1536603964743" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
+	  <content><![CDATA[{?NumberIncrement "currentItemCount", 1}		"{?Calculate "{?LoopCounter}+1","","0"}"
 		{
 			"type"		"model"
 			"model"		"{&Item.Meta Description}"
 		}{?CompareNumeric {?NumberGet "currentItemCount"},{?NumberGet "countItems"},"",",",""}
 ]]></content>
-    </module>
-    <module name="footer" id="1537390156315">
-      <datatype type="">
-        <datatype_params/>
-      </datatype>
-      <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1537390156315" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
-      <content><![CDATA[	}
+	</module>
+	<module name="footer" id="1537390156315">
+	  <datatype type="">
+		<datatype_params/>
+	  </datatype>
+	  <cardinality_setting sys-id="1" factory-id="hlr.CardinalitySetting" identifier="1537390156315" log-threshold="WARNING" failure-action="NONE" mandatory="false"/>
+	  <content><![CDATA[	}
 	"name"		"SUP Whitelist"
 	"version"		"3"
 }]]></content>
-    </module>
+	</module>
   </modules>
 </ppm-export-template>
