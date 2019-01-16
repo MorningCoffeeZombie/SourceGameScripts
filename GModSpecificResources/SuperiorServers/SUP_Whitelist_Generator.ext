@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ppm-export-template sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.file.FileManager" name="_JSON_EXPORTTEMPLATE" version="10" proxy="592[|][|]ExportTemplate[|]">
+<ppm-export-template sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.texttemplate.core.file.FileManager" name="004-SUP Whitelist" version="10">
   <template>
-    <modules_content_type>json</modules_content_type>
+    <modules_content_type>txt</modules_content_type>
     <fileEncoding>UTF-8</fileEncoding>
     <formatMap></formatMap>
     <history></history>
@@ -12,12 +12,11 @@
   </template>
   <changelog>
     <created byintid="300" byid="rmj" byname="rmj" datetime="1536603956427"/>
-    <lastchanged byintid="1" byid="Administrator" byname="Administrator" datetime="1547562155442"/>
+    <lastchanged byintid="1" byid="Administrator" byname="Administrator" datetime="1547652312436"/>
   </changelog>
   <functionManager sys-id="1" factory-id="hlr.texttemplate.FunctionManager.factory" context="export"/>
   <alias>
     <aliasfield name="Item.Item Num" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="Article.SupplierAID" identifier="Article.SupplierAID9c25680b2570dac3:-76e9127f:165c37311a0:-7a29" name="%field.Article.SupplierAID.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleType.SupplierAid"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleType" revision-token="1"/></field-path></field>]]></aliasfield>
-    <aliasfield name="Item.Marketing SKU" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="TradeDirectionK.MarketingSKU" identifier="TradeDirectionK.MarketingSKU4704e3810f798c49:-19ca7861:165f253822e:-7d28" name="%field.TradeDirectionK.MarketingSKU.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleTradingType.Res_Text250_03"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleTradingType" revision-token="1"><logical-key type="ArticleTradingType.LK.Classifier" value="I"/><logical-key type="ArticleTradingType.LK.PartyMS" value="3[|][|]Party[|]"/><logical-key-filter type="ArticleTradingType.LK.PartyMS"><filter-enum>Enum.SupplierWithMainSupplier</filter-enum></logical-key-filter></entity-path></field-path></field>]]></aliasfield>
     <aliasfield name="Item.Meta Description" datatype="DataTypeArticleAssortment"><![CDATA[<field initial-identifier="TradeDirectionF.MetaDescription" identifier="TradeDirectionF.MetaDescriptione60f527ce9d7f7e7:49f0e8d4:1684e767dee:-7d8d" name="%field.TradeDirectionF.MetaDescription.name"><field-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.FieldPath" dest-field-type="ArticleTradingType.Res_Text250_01"><entity-path sys-id="1" sys-type="dp" sys-class="com.heiler.ppm.repository.path.EntityPath" start-entity-type="ArticleType" dest-entity-type="ArticleTradingType" revision-token="1"><logical-key type="ArticleTradingType.LK.Classifier" value="F"/><logical-key type="ArticleTradingType.LK.PartyMS" value="3[|][|]Party[|]"/><logical-key-filter type="ArticleTradingType.LK.PartyMS"><filter-enum>Enum.SupplierWithMainSupplier</filter-enum></logical-key-filter></entity-path></field-path></field>]]></aliasfield>
   </alias>
   <variables>
@@ -25,28 +24,9 @@
       <description><![CDATA[]]></description>
       <value><![CDATA[]]></value>
     </variable>
-    <variable id="structureSystem" name="structureSystem" datatype="DataTypeStructure" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="0">
-      <description><![CDATA[]]></description>
-      <value><![CDATA[10005[|][|]Structure[|]]]></value>
-    </variable>
-    <variable id="Faux.PassthroughURL" name="Faux.PassthroughURL" datatype="DataTypeString" mandatory="true" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="0">
-      <description><![CDATA[This is the prefix URL to export PIM images with an HTML link whereby they may be opened from the web.
-Valid URLs:
-https://www.bradleycorp.com/imageBank/passThrough/image.jpg?path=/
-https://www.bradleycorp.com/imageBank/passThrough/image.jpg?fill=2000x2000&path=/]]></description>
-      <value><![CDATA[https://www.bradleycorp.com/imageBank/passThrough/image.jpg?fill=2000x2000&path=/]]></value>
-    </variable>
-    <variable id="priceType" name="priceType" datatype="DataTypePriceTypesSales" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="0">
-      <description><![CDATA[]]></description>
-      <value><![CDATA[3]]></value>
-    </variable>
     <variable id="language" name="language" datatype="DataTypeLanguage" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="1">
       <description><![CDATA[]]></description>
       <value><![CDATA[]]></value>
-    </variable>
-    <variable id="fileQuality" name="fileQuality" datatype="DataTypeRepositoryEnumeration_Enum.MediaAssetQuality" mandatory="false" editable="true" many="false" hosttype="variable" hostobject="" reftype="" refobject="" updatemode="0" valuemode="0">
-      <description><![CDATA[]]></description>
-      <value><![CDATA[highres]]></value>
     </variable>
   </variables>
   <dataproviders>
@@ -55,7 +35,7 @@ https://www.bradleycorp.com/imageBank/passThrough/image.jpg?fill=2000x2000&path=
         <description><![CDATA[A supplier catalog or the master catalog]]></description>
         <value><![CDATA[1[|]MASTER[|]MasterCatalog[|]]]></value>
       </parameter>
-      <parameter id="assortment" name="Assortment" datatype="DataTypeArticleAssortment" mandatory="false" editable="true" many="false" hosttype="dataProvider" hostobject="1536582492586">
+      <parameter id="assortment" name="Assortment" datatype="DataTypeArticleAssortment" mandatory="false" editable="true" many="false" hosttype="dataProvider" hostobject="1536582492586" reftype="" refobject="">
         <description><![CDATA[An item assortment or a list of items]]></description>
         <value><![CDATA[assortmentProxy:128[|][|]ArticleAssortment]]></value>
       </parameter>
