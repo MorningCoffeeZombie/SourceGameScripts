@@ -118,10 +118,6 @@ if [[ $1 = *list* ]]; then
 	printf "${BOLDFONT}-multirun${NORMALFONT} - Run multiple instances of GMod on your PC. \n"
 	printf "${BOLDFONT}-high${NORMALFONT} - Sets the game's priority to High. \n"
 	printf "${BOLDFONT}-nosound${NORMALFONT} - Disable sound support. \n"
-	printf "${BOLDFONT}-nojoy${NORMALFONT} - Instruct game to not expect joystick/controller input \n"
-	printf "${BOLDFONT}-nojoy${NORMALFONT} - Instruct game to not expect joystick/controller input \n"
-	printf "${BOLDFONT}-nojoy${NORMALFONT} - Instruct game to not expect joystick/controller input \n"
-	printf "${BOLDFONT}-nojoy${NORMALFONT} - Instruct game to not expect joystick/controller input \n"
 	printf "${BOLDFONT}FULL LIST OF OPTIONS${NORMALFONT} - https://developer.valvesoftware.com/wiki/Command_Line_Options \n"
 	
 fi
