@@ -34,9 +34,9 @@ if [[ $1 != *help* ]]; then
 fi
 
 
-###########################
-# Backup originalconf files
-###########################
+############################
+# Backup original conf files
+############################
 if [[ $DISTRO = *solus* ]] && [[ ! -f /usr/share/pulseaudio/daemon.conf.BAKORIGINAL ]]; then
     sudo cp /usr/share/pulseaudio/daemon.conf /usr/share/pulseaudio/daemon.conf.BAKORIGINAL
 	printf "$TODAYISO\tCould not file backup of \"/usr/share/pulseaudio/daemon.conf\". One has been created. \n">>$LOGFILE
@@ -128,6 +128,7 @@ fi
 
 # Support Links:
 # https://support.facepunchstudios.com/hc/en-us/articles/213577689-Common-start-up-Problems-and-Solutions
+# https://developer.valvesoftware.com/wiki/Command_Line_Options
 
 
 
