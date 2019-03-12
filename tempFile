@@ -1,0 +1,29 @@
+cl_drawhud	1	, "cl"	Enable the rendering of the hud
+prop_crosshair	cmd		Shows name for prop looking at
+cl_burninggibs	0
+breakable_disable_gib_limit	0	, "sv"	
+
+
+
+
+binds_per_command	1	, "cl"	
+BindToggle	cmd		Performs a bind <key> 'increment var <cvar> 0 1 1'
+cl_timeout	3000	, "a"	After this many seconds without receiving a packet from the server, the client will disconnect itself
+
+
+
+
+con_timestamp	0		Prefix console.log entries with timestamps
+net_showevents	0	, "cheat"	Dump game events to console (1=client only, 2=all).
+datacachesize	256		Size in MB.
+
+
+overview_mode	cmd		Sets overview map mode off,small,large: <0|1|2>
+overview_names	1	, "a", "clientcmd_can_execute", "cl"	Show player's names in map overview.
+overview_tracks	1	, "a", "clientcmd_can_execute", "cl"	Show player's tracks in map overview.
+
+
+r_flashlightfar	750	, "cheat", "cl"	
+r_flashlightfov	60	, "cheat", "cl"	
+r_flashlightladderdist	40	, "cheat", "cl"	
+r_flashlightlinear	100	, "cheat", "cl"	
