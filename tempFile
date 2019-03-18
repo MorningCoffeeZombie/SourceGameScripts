@@ -1,3 +1,41 @@
+// Auto sprint/hold shift
+// buttons to +/- mouse DPI
+//poster	cmd		[multiply] Print a poster
+//prop_debug	cmd		Toggle prop debug mode. If on, props will show colorcoded bounding boxes. Red means ignore all damage. White means respond phys
+//shake	cmd		Shake the screen.
+	//shake_show	0	, "cl"	Displays a list of the active screen shakes.
+	//shake_stop	cmd		Stops all active screen shakes.
+//showhitlocation	0	, "sv"	
+//snd_duckerreleasetime	2
+//speak	cmd		Play a constructed sentence.
+//sv_contact	0	, "nf"	Contact email for server sysop
+//sv_defaultdeployspeed	4	, "sv", "rep"	
+//sv_forcepreload	0	, "a"	Force server side preloading.
+
+
+voice_inputfrom file	// CMD. Get voice input from 'voice_input.wav' rather than from the microphone.
+play			// CMD. Play a sound.
+playgamesound		// CMD. Play a sound from the game sounds txt file
+dynamite_damage 1000	// Default = 200. 
+dynamite_delay 0	// Default = 0.
+
+
+cl_showpos 1	// Default = 0. Draw current position at top of screen
+player_showpredictedposition	// Default = 0.
+player_showpredictedposition_timestep	// Default = 1.
+sk_airboat_drain_rate 1	// Default = 10.
+sk_airboat_max_ammo 9999	// Default = 100.
+sk_airboat_recharge_rate 9999	// Default = 15.
+sv_infinite_aux_power 1	// Default = 0.
+
+
+echo "Use !pmute to mute sayen chat"
+echo "Use !s to set your respawn point"
+echo "Use 'status' in console to view your SteamID"
+
+////////////////////////////////
+
+
 cl_drawhud	1	, "cl"	Enable the rendering of the hud
 prop_crosshair	cmd		Shows name for prop looking at
 cl_burninggibs	0
