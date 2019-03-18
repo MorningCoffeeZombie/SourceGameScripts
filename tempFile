@@ -9,7 +9,6 @@
 //snd_duckerreleasetime	2
 //speak	cmd		Play a constructed sentence.
 //sv_contact	0	, "nf"	Contact email for server sysop
-//sv_defaultdeployspeed	4	, "sv", "rep"	
 //sv_forcepreload	0	, "a"	Force server side preloading.
 
 
@@ -27,6 +26,7 @@ sk_airboat_drain_rate 1	// Default = 10.
 sk_airboat_max_ammo 9999	// Default = 100.
 sk_airboat_recharge_rate 9999	// Default = 15.
 sv_infinite_aux_power 1	// Default = 0.
+sv_defaultdeployspeed 100	// Default = 4. Higher numbers make your gun equip faster
 
 
 echo "Use !pmute to mute sayen chat"
