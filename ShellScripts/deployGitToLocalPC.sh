@@ -22,13 +22,14 @@ ar_common_source_configs=(
 )
 
 ar_game_cfg_folders=(
-	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Global Offensive/"
-	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/"
-	"/home/$USER/.steam/steam/steamapps/common/Day of Defeat Source/"
+	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrick/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Day of Defeat Source/dod/cfg/"
 	"/home/$USER/.steam/steam/steamapps/common/GarrysMod/garrysmod/cfg/"
-	"/home/$USER/.steam/steam/steamapps/common/Portal/"
-	"/home/$USER/.steam/steam/steamapps/common/left 4 dead/"
-	"/home/$USER/.steam/steam/steamapps/common/Team Fortress 2/"
+	"/home/$USER/.steam/steam/steamapps/common/Portal/portal/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/left 4 dead/left4dead/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Half-Life 2/hl2/cfg/"
 )
 
 
@@ -78,6 +79,12 @@ do
 		cp $SCRIPTLOCATION/../tf2_general.cfg $a
 		echo "Copied:	$SCRIPTLOCATION/../tf2_general.cfg to $a"
 	fi
+	
+	if [ ! -d "$a" ] && [[ "$a" = *Half*Life*2* ]]; then
+		cp $SCRIPTLOCATION/../tf2_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../hl2_power_script.cfg to $a"
+		echo "Copied:	$SCRIPTLOCATION/../hl2_commands.lst to $a"
+	fi
 done
 
 
@@ -86,11 +93,6 @@ exit
 
 
 
-
-
-# NEED TO ADD HL2 SUPPORT
-# NEED TO ADD HL2 SUPPORT
-# NEED TO ADD HL2 SUPPORT
 
 
 

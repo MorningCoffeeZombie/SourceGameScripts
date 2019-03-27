@@ -13,7 +13,16 @@ SCRIPTLOCATION=$(pwd)
 # Set default game
 GAME="Counter-Strike Global Offensive"
 
-if [[ "${1,,}" = gam* ]] || [[ "${2,,}" = mod* ]]; then
+
+if [[ "${1,,}" = help* ]] || [ "${1,,}" = "/?" ] ; then
+	printf "\n${GREEN}${BOLDFONT}CURRENT GAME:\t\t$GAME${NORMALFONT}${NC}\n"
+	printf "${BOLDFONT}ARGUMENT\t\tDESCRIPTION${NORMALFONT}\n"
+	printf "${BOLDFONT}help${NORMALFONT}\t\t\tDisplay this help text.\n"
+	printf "${BOLDFONT}game${NORMALFONT}\t\t\tSwitch the game directory that sound clips are saved to.\n"
+	printf "${BOLDFONT}mode${NORMALFONT}\t\t\tSwitch the game directory that sound clips are saved to.\n"
+fi
+
+if [[ "${1,,}" = gam* ]] || [[ "${1,,}" = mod* ]]; then
 	if [ "${2,,}" = "csgo" ] || [ "${2,,}" = "" ]; then
 		GAME="Counter-Strike Global Offensive"
 		sudo printf "GAME=Counter-Strike Global Offensive\n" | sudo tee --append swapMicSpams.conf
@@ -35,12 +44,15 @@ if [[ "${1,,}" = gam* ]] || [[ "${2,,}" = mod* ]]; then
 	elif [ "${2,,}" = "tf2" ] || [[ "${2,,}" = team* ]]; then
 		GAME="Team Fortress 2"
 		sudo printf "GAME=Team Fortress 2\n" | sudo tee --append swapMicSpams.conf
+	elif [ "${2,,}" = "hl2" ] || [[ "${2,,}" = half* ]]; then
+		GAME="Half-Life 2"
+		sudo printf "GAME=Team Fortress 2\n" | sudo tee --append swapMicSpams.conf
 	fi
 fi
 
 
 # Catch errors
-if [ ! -d /steamapps/common/$GAME ]; then
+if [ ! -d "/home/$USER/.steam/steam/steamapps/common/$GAME" ]; then
 	printf "${RED}GAME NOT INSTALLED AS EXPECTED!${NC}\n"
 	printf "${RED}EXITING SCRIPT${NC}\n"
 	exit
