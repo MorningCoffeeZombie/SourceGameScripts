@@ -93,7 +93,7 @@ do
 		"OOF")
 			cp $SCRIPTLOCATION/MicSpams/oof_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Price Is Wrong")
-			cp $SCRIPTLOCATION/MicSpams/pull_the_trigger_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+			cp $SCRIPTLOCATION/MicSpams/price_is_wrong.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Pull The Trigger")
 			cp $SCRIPTLOCATION/MicSpams/pull_the_trigger_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"IM THE MOUNTAIN")
