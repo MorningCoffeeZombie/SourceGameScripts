@@ -107,6 +107,7 @@ fi
 
 if [[ $1 = *list* ]]; then
 	printf "${BOLDFONT}-nojoy${NORMALFONT} - Instruct game to not expect joystick/controller input. \n"
+	printf "${BOLDFONT}+exec autoexec${NORMALFONT} - Force game to load the autoexec.cfg in the correct order. \n"
 	printf "${BOLDFONT}-condebug${NORMALFONT} - Send console debugging logs to /.steam/steam/steamapps/common/GarrysMod/garrysmod.console.log. This log can be tailed with -f to see live info. \n"
 	printf "${BOLDFONT}-USEALLAVAILABLECORES${NORMALFONT} - Make GMod use all of your CPU cores. If all of your CPU cores are NOT being used after using this launch option then disable it as it may cause more stuttering. \n"
 	printf "${BOLDFONT}-lowmemory${NORMALFONT} - Launches the game in 4gb memory mode. This may prevent maxing out memory usage. \n"
