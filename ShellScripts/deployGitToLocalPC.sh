@@ -23,7 +23,7 @@ ar_common_source_configs=(
 
 ar_game_cfg_folders=(
 	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/"
-	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrick/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/cfg/"
 	"/home/$USER/.steam/steam/steamapps/common/Day of Defeat Source/dod/cfg/"
 	"/home/$USER/.steam/steam/steamapps/common/GarrysMod/garrysmod/cfg/"
 	"/home/$USER/.steam/steam/steamapps/common/Portal/portal/cfg/"
@@ -50,9 +50,12 @@ do
 		echo "Copied:	$SCRIPTLOCATION/../csgo_general.cfg to $a"
 	fi
 
-#	if [ ! -d "$a" ] && [[ "$a" = *Strike*Source* ]]; then
-		# There are currently no saved configs for CSS
-#	fi
+	if [ ! -d "$a" ] && [[ "$a" = *Strike*Source* ]]; then
+		cp $SCRIPTLOCATION/../css_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../csgo_general.cfg to $a"
+		cp $SCRIPTLOCATION/../cstrike_english.txt /home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/resource/
+		echo "Copied:	$SCRIPTLOCATION/../cstrike_english.txt to /home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/resource/"
+	fi
 
 #	if [ ! -d "$a" ] && [[ "$a" = *Defeat*Source* ]]; then
 		# There are currently no saved DODS
