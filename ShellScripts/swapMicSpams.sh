@@ -1,4 +1,5 @@
 #!/bin/bash
+# Audio MUST BE: 16 bit format, Mono (not stereo), and 22050Hz
 
 
 # Text effects
@@ -68,24 +69,32 @@ do
 	echo  
 	echo  
 	PS3="Which soundbyte would you like to que? "
-	options=("Bomb Planted" "Concentrate" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Chris Hansen" "Medic!" "Mr. Meeseeks" "OOF" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sexual Helicopter" "Virgin In House" "Quit")
+	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "Concentrate" "Dirty Jobs" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "Kinky?!?" "Medic!" "Mr. Meeseeks" "OOF" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sexual Helicopter" "Virgin In House" "Yakety Sax" "Quit")
 	select voiceinput in "${options[@]}"
 	do
 	case $voiceinput in
+		"Be Gone Thot")
+			cp $SCRIPTLOCATION/MicSpams/be_gone_thot_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Bill Nye Chant")
+			cp $SCRIPTLOCATION/MicSpams/bill_nye_chant_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Bomb Planted")
 			cp $SCRIPTLOCATION/MicSpams/bomb_planted_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Concentrate")
 			cp $SCRIPTLOCATION/MicSpams/concentrate_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Dirty Jobs")
+			cp $SCRIPTLOCATION/MicSpams/dirty_jobs_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Drinking Problem")
 			cp $SCRIPTLOCATION/MicSpams/drinking_problem_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"FBI Open Up")
 			cp $SCRIPTLOCATION/MicSpams/fbi-open-up-sfx_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Get To Choppa")
 			cp $SCRIPTLOCATION/MicSpams/get_to_choppa_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Gotcha Bitch")
+			cp $SCRIPTLOCATION/MicSpams/gotcha_bitch_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Chris Hansen")
 			cp $SCRIPTLOCATION/MicSpams/im_chris_hansen_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-#		"Kinky")
-#			cp $SCRIPTLOCATION/MicSpams/kinky_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Kinky?!?")
+			cp $SCRIPTLOCATION/MicSpams/kinky_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Medic!")
 			cp $SCRIPTLOCATION/MicSpams/medic_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Mr. Meeseeks")
@@ -102,6 +111,8 @@ do
 			cp $SCRIPTLOCATION/MicSpams/sexually_identify_helicopter_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Virgin In House")
 			cp $SCRIPTLOCATION/MicSpams/22_yo_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Yakety Sax")
+			cp $SCRIPTLOCATION/MicSpams/yakety_sax_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Quit")
 			exit;;
 		*) echo "invalid option $REPLY";;
