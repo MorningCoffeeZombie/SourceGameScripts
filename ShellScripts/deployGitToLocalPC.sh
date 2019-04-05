@@ -84,7 +84,8 @@ do
 	fi
 	
 	if [ ! -d "$a" ] && [[ "$a" = *Half*Life*2* ]]; then
-		cp $SCRIPTLOCATION/../tf2_general.cfg $a
+		cp $SCRIPTLOCATION/../hl2_power_script.cfg $a
+		cp $SCRIPTLOCATION/../hl2_commands.lst $a
 		echo "Copied:	$SCRIPTLOCATION/../hl2_power_script.cfg to $a"
 		echo "Copied:	$SCRIPTLOCATION/../hl2_commands.lst to $a"
 	fi
