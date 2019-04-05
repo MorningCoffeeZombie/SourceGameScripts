@@ -1,6 +1,4 @@
 #!/bin/bash
-# Audio MUST BE: 16 bit format, Mono (not stereo), and 22050Hz
-
 
 # Text effects
 BOLDFONT=$(tput bold)
@@ -9,156 +7,94 @@ RED='\033[0;31m'
 YELLOW='\033[1;33m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
+
 SCRIPTLOCATION=$(pwd)
 
-# Call Font Scripts
-# ${RED}My text here${NC}
 
-# This is a throw-away variable for tallying playcount and recording it to the .conf file
-MATH=0
+ar_common_source_configs=(
+	'autoexec.cfg'
+	'source_debugging.cfg'
+	'source_enable_user_sprays.cfg'
+	'source_fake_lag.cfg'
+	'source_fake_lag_removal.cfg'
+	'source_network_boost.cfg'
+	'source_optimize_low_end_pc.cfg'
+)
 
-# Save settings/stats locally
-# The $GAME var MUST be set to the full/proper name as this is also the top level name of the folder in which the voice_input.wav will reside
-source /swapMicSpams.conf
-function fn_check_conf(){
-	if [ ! -f "/swapMicSpams.conf" ]; then
-		echo "Config file could not be found, creating a new one"
-		sudo echo> /swapMicSpams.conf
-		sudo printf "GAME=Counter-Strike Global Offensive\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND1=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND2=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND3=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND4=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND5=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND6=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND7=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND8=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND9=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND10=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo printf "SOUND11=0\n" | sudo tee --append /swapMicSpams.conf
-		sudo chmod 777 /swapMicSpams.conf
-		source /swapMicSpams.conf
-		echo "New config file successfully created"
-	fi
-}
+ar_game_cfg_folders=(
+	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Global Offensive/csgo/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Day of Defeat Source/dod/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/GarrysMod/garrysmod/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Portal/portal/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/left 4 dead/left4dead/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Half-Life 2/hl2/cfg/"
+)
 
 
-if [[ "${1,,}" = help* ]] || [ "${1,,}" = "/?" ] ; then
-	printf "\n${GREEN}${BOLDFONT}CURRENT GAME:\t\t$GAME${NORMALFONT}${NC}\n"
-	printf "${BOLDFONT}ARGUMENT\t\tDESCRIPTION${NORMALFONT}\n"
-	printf "${BOLDFONT}help${NORMALFONT}\t\t\tDisplay this help text.\n"
-	printf "${BOLDFONT}game${NORMALFONT}\t\t\tSwitch the game directory that sound clips are saved to.\n"
-	printf "${BOLDFONT}mode${NORMALFONT}\t\t\tSwitch the game directory that sound clips are saved to.\n"
-fi
-
-if [[ "${1,,}" = gam* ]] || [[ "${1,,}" = mod* ]]; then
-	if [ "${2,,}" = "csgo" ] || [ "${2,,}" = "" ]; then
-		GAME="Counter-Strike Global Offensive"
-		sudo printf "GAME=Counter-Strike Global Offensive\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "csgo" ] || [ "${2,,}" = "cs go" ]; then
-		GAME="Counter-Strike Source"
-		sudo printf "GAME=Counter-Strike Source\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "dod" ] || [ "${2,,}" = "dods" ]; then
-		GAME="Day of Defeat Source"
-		sudo printf "GAME=Day of Defeat Source\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "gmod" ] || [ "${2,,}" = "garrysmod" ]; then
-		GAME="GarrysMod"
-		sudo printf "GAME=GarrysMod\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "portal" ]; then
-		GAME="Portal"
-		sudo printf "GAME=Portal\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "l4d" ] || [[ "${2,,}" = lef* ]]; then
-		GAME="left 4 dead"
-		sudo printf "GAME=left 4 dead\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "tf2" ] || [[ "${2,,}" = team* ]]; then
-		GAME="Team Fortress 2"
-		sudo printf "GAME=Team Fortress 2\n" | sudo tee --append swapMicSpams.conf
-	elif [ "${2,,}" = "hl2" ] || [[ "${2,,}" = half* ]]; then
-		GAME="Half-Life 2"
-		sudo printf "GAME=Team Fortress 2\n" | sudo tee --append swapMicSpams.conf
-	fi
-fi
-
-
-# Catch errors
-if [ ! -d "/home/$USER/.steam/steam/steamapps/common/$GAME" ]; then
-	printf "${RED}GAME NOT INSTALLED AS EXPECTED!${NC}\n"
-	printf "${RED}EXITING SCRIPT${NC}\n"
-	exit
-fi
-
-
-# Placing script in a loop so you don't have to reopen every time
-while true;
+# Loop through each of the supported directories and copy specified files
+for a in "${ar_game_cfg_folders[@]}"
 do
-	echo  
-	echo  
-	PS3="Which soundbyte would you like to que? "
-	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "Its My Money" "Kinky?!?" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sexual Helicopter" "Virgin In House" "Yakety Sax" "Quit")
-	select voiceinput in "${options[@]}"
+	# Place all common configs into all folders
+	for b in "${ar_common_source_configs[@]}"
 	do
-	case $voiceinput in
-		"Be Gone Thot")
-			cp $SCRIPTLOCATION/MicSpams/be_gone_thot_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-			#MATH=$(( $($BeGoneThot) + 1 ))
-			#sudo sed -i '/BeGoneThot/ s/.*/BeGoneThot='$MATH'/' /swapMicSpams.conf
-		"Bill Nye Chant")
-			cp $SCRIPTLOCATION/MicSpams/bill_nye_chant_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Bomb Planted")
-			cp $SCRIPTLOCATION/MicSpams/bomb_planted_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"CHOCOLATE!")
-			cp $SCRIPTLOCATION/MicSpams/chocolate_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Concentrate")
-			cp $SCRIPTLOCATION/MicSpams/concentrate_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Dab Distorted")
-			cp $SCRIPTLOCATION/MicSpams/dab_distorted_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Dirty Jobs")
-			cp $SCRIPTLOCATION/MicSpams/dirty_jobs_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Drinking Problem")
-			cp $SCRIPTLOCATION/MicSpams/drinking_problem_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"FBI Open Up")
-			cp $SCRIPTLOCATION/MicSpams/fbi-open-up-sfx_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Get To Choppa")
-			cp $SCRIPTLOCATION/MicSpams/get_to_choppa_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Gotcha Bitch")
-			cp $SCRIPTLOCATION/MicSpams/gotcha_bitch_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Chris Hansen")
-			cp $SCRIPTLOCATION/MicSpams/im_chris_hansen_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Its My Money")
-			cp $SCRIPTLOCATION/MicSpams/its_my_money_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Kinky?!?")
-			cp $SCRIPTLOCATION/MicSpams/kinky_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Medic!")
-			cp $SCRIPTLOCATION/MicSpams/medic_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Mr. Meeseeks")
-			cp $SCRIPTLOCATION/MicSpams/mr_meeseeks_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"My Leg")
-			cp $SCRIPTLOCATION/MicSpams/my_leg_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"OOF")
-			cp $SCRIPTLOCATION/MicSpams/oof_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Price Is Wrong")
-			cp $SCRIPTLOCATION/MicSpams/price_is_wrong.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Pull The Trigger")
-			cp $SCRIPTLOCATION/MicSpams/pull_the_trigger_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"IM THE MOUNTAIN")
-			cp $SCRIPTLOCATION/MicSpams/stoned_jesus_im_the_mountain_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Sexual Helicopter")
-			cp $SCRIPTLOCATION/MicSpams/sexually_identify_helicopter_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Virgin In House")
-			cp $SCRIPTLOCATION/MicSpams/22_yo_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Yakety Sax")
-			cp $SCRIPTLOCATION/MicSpams/yakety_sax_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Quit")
-			exit;;
-		*) echo "invalid option $REPLY";;
-	esac
+		if [ ! -d "$a" ]; then
+			cp $SCRIPTLOCATION/../$b $a
+			echo "Copied:	$SCRIPTLOCATION/../$b to $a"
+		fi
 	done
+
+	if [ ! -d "$a" ] && [[ "$a" = *Strike*Global* ]]; then
+		cp $SCRIPTLOCATION/../csgo_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../csgo_general.cfg to $a"
+	fi
+
+	if [ ! -d "$a" ] && [[ "$a" = *Strike*Source* ]]; then
+		cp $SCRIPTLOCATION/../css_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../csgo_general.cfg to $a"
+		cp $SCRIPTLOCATION/../cstrike_english.txt /home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/resource/
+		echo "Copied:	$SCRIPTLOCATION/../cstrike_english.txt to /home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/resource/"
+	fi
+
+#	if [ ! -d "$a" ] && [[ "$a" = *Defeat*Source* ]]; then
+		# There are currently no saved DODS
+#	fi
+
+	if [ ! -d "$a" ] && [[ "$a" = *GarrysMod* ]]; then
+		cp $SCRIPTLOCATION/../gmod_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../gmod_general.cfg to $a"
+		cp $SCRIPTLOCATION/../gmod_mcore_off.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../gmod_mcore_off.cfg to $a"
+		cp $SCRIPTLOCATION/../gmod_mcore_on.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../gmod_mcore_on.cfg to $a"
+	fi
+
+#	if [ ! -d "$a" ] && [[ "$a" = *Portal* ]]; then
+		# There are currently no saved configs for Portal
+#	fi
+
+#	if [ ! -d "$a" ] && [[ "$a" = *4*dead* ]]; then
+		# There are currently no saved configs for Left 4 Dead
+#	fi
+
+	if [ ! -d "$a" ] && [[ "$a" = *Team*Fortress* ]]; then
+		cp $SCRIPTLOCATION/../tf2_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../tf2_general.cfg to $a"
+	fi
+	
+	if [ ! -d "$a" ] && [[ "$a" = *Half*Life*2* ]]; then
+		cp $SCRIPTLOCATION/../tf2_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../hl2_power_script.cfg to $a"
+		echo "Copied:	$SCRIPTLOCATION/../hl2_commands.lst to $a"
+	fi
 done
 
 
 
+exit
 
-#cp ../MicSpams/ "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"
+
 
 
 
