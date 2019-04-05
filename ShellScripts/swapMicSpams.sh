@@ -94,7 +94,7 @@ do
 	echo  
 	echo  
 	PS3="Which soundbyte would you like to que? "
-	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "Its My Money" "Kinky?!?" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sexual Helicopter" "Virgin In House" "Yakety Sax" "Quit")
+	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sexual Helicopter" "Virgin In House" "Yakety Sax" "Quit")
 	select voiceinput in "${options[@]}"
 	do
 	case $voiceinput in
@@ -124,6 +124,8 @@ do
 			cp $SCRIPTLOCATION/MicSpams/gotcha_bitch_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Chris Hansen")
 			cp $SCRIPTLOCATION/MicSpams/im_chris_hansen_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"I See Dead People")
+			cp $SCRIPTLOCATION/MicSpams/i_see_dead_people_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Its My Money")
 			cp $SCRIPTLOCATION/MicSpams/its_my_money_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Kinky?!?")
@@ -136,6 +138,8 @@ do
 			cp $SCRIPTLOCATION/MicSpams/my_leg_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"OOF")
 			cp $SCRIPTLOCATION/MicSpams/oof_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Points Dont Matter")
+			cp $SCRIPTLOCATION/MicSpams/points_dont_matter_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Price Is Wrong")
 			cp $SCRIPTLOCATION/MicSpams/price_is_wrong.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Pull The Trigger")
