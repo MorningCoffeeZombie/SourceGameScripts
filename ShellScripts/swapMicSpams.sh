@@ -14,8 +14,33 @@ SCRIPTLOCATION=$(pwd)
 # Call Font Scripts
 # ${RED}My text here${NC}
 
-# Set default game
-GAME="Counter-Strike Global Offensive"
+# This is a throw-away variable for tallying playcount and recording it to the .conf file
+MATH=0
+
+# Save settings/stats locally
+# The $GAME var MUST be set to the full/proper name as this is also the top level name of the folder in which the voice_input.wav will reside
+source /swapMicSpams.conf
+function fn_check_conf(){
+	if [ ! -f "/swapMicSpams.conf" ]; then
+		echo "Config file could not be found, creating a new one"
+		sudo echo> /swapMicSpams.conf
+		sudo printf "GAME=Counter-Strike Global Offensive\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND1=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND2=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND3=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND4=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND5=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND6=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND7=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND8=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND9=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND10=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo printf "SOUND11=0\n" | sudo tee --append /swapMicSpams.conf
+		sudo chmod 777 /swapMicSpams.conf
+		source /swapMicSpams.conf
+		echo "New config file successfully created"
+	fi
+}
 
 
 if [[ "${1,,}" = help* ]] || [ "${1,,}" = "/?" ] ; then
@@ -75,6 +100,8 @@ do
 	case $voiceinput in
 		"Be Gone Thot")
 			cp $SCRIPTLOCATION/MicSpams/be_gone_thot_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+			#MATH=$(( $($BeGoneThot) + 1 ))
+			#sudo sed -i '/BeGoneThot/ s/.*/BeGoneThot='$MATH'/' /swapMicSpams.conf
 		"Bill Nye Chant")
 			cp $SCRIPTLOCATION/MicSpams/bill_nye_chant_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Bomb Planted")
