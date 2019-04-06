@@ -1,0 +1,9 @@
+-noborder -width 1920 -height 1080 -multirun 
++connect rp.superiorservers.co'
+on the launcher.exe
+
+
+https://i.ibb.co/wJpVmGw/derp.jpg
+https://i.ibb.co/HCSfrrC/derp2.jpg
+
+
