@@ -41,6 +41,8 @@ function fn_check_conf(){
 		echo "New config file successfully created"
 	fi
 }
+GAME="Counter-Strike Global Offensive"
+#fn_check_conf
 
 
 if [[ "${1,,}" = help* ]] || [ "${1,,}" = "/?" ] ; then
@@ -151,7 +153,7 @@ do
 		"Virgin In House")
 			cp $SCRIPTLOCATION/MicSpams/22_yo_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Yakety Sax")
-			cp $SCRIPTLOCATION/MicSpams/yakety_sax_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+			cp $SCRIPTLOCATION/MicSpams/yakety_sax_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Quit")
 			exit;;
 		*) echo "invalid option $REPLY";;
