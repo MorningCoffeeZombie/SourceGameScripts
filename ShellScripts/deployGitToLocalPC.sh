@@ -52,7 +52,7 @@ do
 
 	if [ ! -d "$a" ] && [[ "$a" = *Strike*Source* ]]; then
 		cp $SCRIPTLOCATION/../css_general.cfg $a
-		echo "Copied:	$SCRIPTLOCATION/../csgo_general.cfg to $a"
+		echo "Copied:	$SCRIPTLOCATION/../css_general.cfg to $a"
 		cp $SCRIPTLOCATION/../cstrike_english.txt /home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/resource/
 		echo "Copied:	$SCRIPTLOCATION/../cstrike_english.txt to /home/$USER/.steam/steam/steamapps/common/Counter-Strike Source/cstrike/resource/"
 	fi
