@@ -96,7 +96,7 @@ do
 	echo  
 	echo  
 	PS3="Which soundbyte would you like to que? "
-	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "NOT THE BEES!" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sausages" "Sexual Helicopter" "Virgin In House" "Yakety Sax" "Quit")
+	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "NOT THE BEES!" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "Sausages" "Sexual Helicopter" "Virgin In House" "We Got Him" "Yakety Sax" "Quit")
 	select voiceinput in "${options[@]}"
 	do
 	case $voiceinput in
@@ -160,6 +160,8 @@ do
 			cp $SCRIPTLOCATION/MicSpams/22_yo_virgin_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Yakety Sax")
 			cp $SCRIPTLOCATION/MicSpams/yakety_sax_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"We Got Him")
+			cp $SCRIPTLOCATION/MicSpams/we_got_him_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Quit")
 			exit;;
 		*) echo "invalid option $REPLY";;
