@@ -104,6 +104,8 @@ do
 			cp $SCRIPTLOCATION/MicSpams/be_gone_thot_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 			#MATH=$(( $($BeGoneThot) + 1 ))
 			#sudo sed -i '/BeGoneThot/ s/.*/BeGoneThot='$MATH'/' /swapMicSpams.conf
+		"Bill Cosby - Get Ready")
+			cp $SCRIPTLOCATION/MicSpams/bill_cosby_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Bill Nye Chant")
 			cp $SCRIPTLOCATION/MicSpams/bill_nye_chant_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Bomb Planted")
