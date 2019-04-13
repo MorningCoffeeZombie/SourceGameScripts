@@ -96,7 +96,7 @@ do
 	echo  
 	echo  
 	PS3="Which soundbyte would you like to que? "
-	options=("Be Gone Thot" "Bill Nye Chant" "Bomb Planted" "Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Discord - Message" "Discord - Incoming Call" "Discord - Joining (3x)" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Lahey - Clock's Tickin" "Lahey - Drunk/Sober Enough" "Lahey - I Condemn This" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "NOT THE BEES!" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "RUN AWAY!" "Sausages" "Sexual Helicopter" "Virgin In House" "We Got Him" "WORLDSTAR!" "Yakety Sax" "Zoidberg - Boooo" "Zoidberg - Scuddling" "Quit")
+	options=("Be Gone Thot" "Bill Cosby - Get Ready" "Bill Nye Chant" "Bomb Planted" "Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Discord - Message" "Discord - Incoming Call" "Discord - Joining (3x)" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Lahey - Clock's Tickin" "Lahey - Drunk/Sober Enough" "Lahey - I Condemn This" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "NOT THE BEES!" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "RUN AWAY!" "Sausages" "Sexual Helicopter" "Virgin In House" "We Got Him" "WORLDSTAR!" "Yakety Sax" "Zoidberg - Boooo" "Zoidberg - Scuddling" "Quit")
 	select voiceinput in "${options[@]}"
 	do
 	case $voiceinput in
