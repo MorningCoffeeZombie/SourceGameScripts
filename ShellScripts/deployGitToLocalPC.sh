@@ -30,6 +30,9 @@ ar_game_cfg_folders=(
 	"/home/$USER/.steam/steam/steamapps/common/left 4 dead/left4dead/cfg/"
 	"/home/$USER/.steam/steam/steamapps/common/Team Fortress 2/tf/cfg/"
 	"/home/$USER/.steam/steam/steamapps/common/Half-Life 2/hl2/cfg/"
+	"/home/$USER/.steam/steam/steamapps/common/Half-Life/valve/"
+	"/home/$USER/.steam/steam/steamapps/common/Half-Life/cstrike/"
+	"/home/$USER/.steam/steam/steamapps/common/Half-Life/czeror/"
 )
 
 
@@ -89,6 +92,12 @@ do
 		echo "Copied:	$SCRIPTLOCATION/../hl2_power_script.cfg to $a"
 		echo "Copied:	$SCRIPTLOCATION/../hl2_commands.lst to $a"
 	fi
+
+	if [ ! -d "$a" ] && [[ "$a" = "Half-Life" ]]; then
+		cp $SCRIPTLOCATION/../cs_general.cfg $a
+		echo "Copied:	$SCRIPTLOCATION/../cs_general.cfg to $a"
+	fi
+
 done
 
 

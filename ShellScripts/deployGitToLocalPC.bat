@@ -14,6 +14,7 @@ SET PORTAL_STATUS=Unknown
 SET L4D_STATUS=Unknown
 SET TF2_STATUS=Unknown
 SET HL2_STATUS=Unknown
+SET HL_STATUS=Unknown
 
 :: Full Game Names By Folder Naming Convention in C:\Program Files...
 SET AR_SOURCES[0]="Counter-Strike Global Offensive"
@@ -24,6 +25,7 @@ SET AR_SOURCES[4]="Portal"
 SET AR_SOURCES[5]="left 4 dead"
 SET AR_SOURCES[6]="Team Fortress 2"
 SET AR_SOURCES[7]="Half-Life 2"
+SET AR_SOURCES[8]="Half-Life"
 
 :: Loop Counter
 SET "x=0"
@@ -153,6 +155,22 @@ IF EXIST "C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\" (
 	COPY ../hl2_commands.lst "C:\Program Files (x86)\Steam\steamapps\common\Half-Life 2\hl2\cfg\"
 ) ELSE ( SET HL2_STATUS=Absent )
 
+IF EXIST "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\" (
+	SET HL_STATUS=Installed
+	:: Half-Life 1 General
+	COPY ../autoexec.cfg "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\valve\"
+	COPY ../cs_general.cfg "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\valve\"
+	IF EXIST "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\cstrike\" (
+		:: CS 1.6 General
+		COPY ../autoexec.cfg "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\cstrike\"
+		COPY ../cs_general.cfg "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\cstrike\"
+	)
+	IF EXIST "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\czeror\" (
+		:: CS CZ General
+		COPY ../autoexec.cfg "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\czeror\"
+		COPY ../cs_general.cfg "C:\Program Files (x86)\Steam\steamapps\common\Half-Life\czeror\"
+	)
+) ELSE ( SET HL_STATUS=Absent )
 
 
 
