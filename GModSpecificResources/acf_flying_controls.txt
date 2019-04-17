@@ -1,0 +1,10 @@
+E+R = prime boosters
+	hold W while priming and CTRL to finally launch
+CTRL or SPACE = take off
+V = go third person
+R = switch bombs
+left click = MGs
+right click = main bomb
+'walk' = flairs?
+scroll out = retract 3rd person
+
