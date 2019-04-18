@@ -1,6 +1,6 @@
 # JETS
 ######
-E+R	=	prime boosters
+E+R	=	prime boosters for take off
 		hold W while priming and CTRL to finally launch
 CTRL or SPACE	=	take off
 CTRL	=	switch control mode (WASD vs. Mouse)
@@ -8,7 +8,7 @@ V	=	go third person
 R	=	switch bombs
 LEFT CLICK	=	MGs
 RIGHT CLICK	=	main bomb
-'+walk'	=	flairs?
+'+walk'	=	flairs
 'scroll out mousewheel'	=	retract 3rd person
 F (hold)	=	Night vision
 
