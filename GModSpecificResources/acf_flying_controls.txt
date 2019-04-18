@@ -1,10 +1,19 @@
-E+R = prime boosters
-	hold W while priming and CTRL to finally launch
-CTRL or SPACE = take off
-V = go third person
-R = switch bombs
-left click = MGs
-right click = main bomb
-'walk' = flairs?
-scroll out = retract 3rd person
+# JETS
+######
+E+R	=	prime boosters
+		hold W while priming and CTRL to finally launch
+CTRL or SPACE	=	take off
+CTRL	=	switch control mode (WASD vs. Mouse)
+V	=	go third person
+R	=	switch bombs
+LEFT CLICK	=	MGs
+RIGHT CLICK	=	main bomb
+'+walk'	=	flairs?
+'scroll out mousewheel'	=	retract 3rd person
+F (hold)	=	Night vision
+
+
+# HALF LIFE 2 VEHICLES
+######################
+CTRL = First/Third person view
 
