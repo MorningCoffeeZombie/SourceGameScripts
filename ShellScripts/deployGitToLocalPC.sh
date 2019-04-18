@@ -71,6 +71,10 @@ do
 		echo "Copied:	$SCRIPTLOCATION/../gmod_mcore_off.cfg to $a"
 		cp $SCRIPTLOCATION/../gmod_mcore_on.cfg $a
 		echo "Copied:	$SCRIPTLOCATION/../gmod_mcore_on.cfg to $a"
+		cp $SCRIPTLOCATION/../GModSpecificResources/AEF_Woodland.txt /home/$USER/.steam/steam/steamapps/common/GarrysMod/garrysmod/data/pac3/
+		echo "Copied:	$SCRIPTLOCATION/../GModSpecificResources/AEF_Woodland.txt to $a"
+		cp $SCRIPTLOCATION/../GModSpecificResources/autoload.txt /home/$USER/.steam/steam/steamapps/common/GarrysMod/garrysmod/data/pac3/
+		echo "Copied:	$SCRIPTLOCATION/../GModSpecificResources/autoload.txt to $a"
 	fi
 
 #	if [ ! -d "$a" ] && [[ "$a" = *Portal* ]]; then
