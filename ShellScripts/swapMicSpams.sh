@@ -96,7 +96,7 @@ do
 	echo  
 	echo  
 	PS3="Which soundbyte would you like to que? "
-	options=("Be Gone Thot" "Bill Cosby - Get Ready" "Bill Nye Chant" "Bomb Planted" "Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Discord - Message" "Discord - Incoming Call" "Discord - Joining (3x)" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Lahey - Clock's Tickin" "Lahey - Drunk/Sober Enough" "Lahey - I Condemn This" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "NOT THE BEES!" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "RUN AWAY!" "Sausages" "Sexual Helicopter" "Virgin In House" "We Got Him" "WORLDSTAR!" "Yakety Sax" "Zoidberg - Boooo" "Zoidberg - Scuddling" "Quit")
+	options=("Be Gone Thot" "Bill Cosby - Get Ready" "Bill Nye Chant" "Bomb Planted" "Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Discord - Message" "Discord - Incoming Call" "Discord - Joining (3x)" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" "I See Dead People" "Its My Money" "Kinky?!?" "Lahey - Clock's Tickin" "Lahey - Drunk/Sober Enough" "Lahey - I Condemn This" "Medic!" "Mr. Meeseeks" "My Leg" "OOF" "NOT THE BEES!" "Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "RUN AWAY!" "Sam L Jackson - Look Like Bitch" "Sam L Jackson - Look Like Bitch Aggressive" "Sam L Jackson - Say What" "Sam L Jackson - Speak English" "Sausages" "Sexual Helicopter" "Virgin In House" "We Got Him" "WORLDSTAR!" "Yakety Sax" "Zoidberg - Boooo" "Zoidberg - Scuddling" "Quit")
 	select voiceinput in "${options[@]}"
 	do
 	case $voiceinput in
@@ -168,6 +168,14 @@ do
 			cp $SCRIPTLOCATION/MicSpams/stoned_jesus_im_the_mountain_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"RUN AWAY!")
 			cp $SCRIPTLOCATION/MicSpams/run_away_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Sam L Jackson - Look Like Bitch")
+			cp $SCRIPTLOCATION/MicSpams/sam_jackson_look_like_bitch_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Sam L Jackson - Look Like Bitch Aggressive")
+			cp $SCRIPTLOCATION/MicSpams/sam_jackson_look_like_bitch_aggressive_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Sam L Jackson - Say What")
+			cp $SCRIPTLOCATION/MicSpams/sam_jackson_say_what_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Sam L Jackson - Speak English")
+			cp $SCRIPTLOCATION/MicSpams/sam_jackson_speak_english_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Sausages")
 			cp $SCRIPTLOCATION/MicSpams/sausages_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Sexual Helicopter")
