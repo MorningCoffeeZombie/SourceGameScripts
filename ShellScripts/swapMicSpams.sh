@@ -96,15 +96,15 @@ do
 	echo  
 	echo  
 	PS3="Which soundbyte would you like to que? "
-	options=("ALLAHU AKBAR!" "Be Gone Thot" "Bill Cosby - Get Ready" "Bill Nye Chant" "CSGO - Bomb Planted" "CSGO - CT Win" "CSGO - T Win" \
-			"Cant Hurt Me" "CHOCOLATE!" "Concentrate" "Dab Distorted" "Dirty Jobs" "Discord - Message" "Discord - Incoming Call" \
-			"Discord - Joining (3x)" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" "Chris Hansen" \
+	options=("ALLAHU AKBAR!" "Be Gone Thot" "Bill Cosby - Get Ready" "Bill Nye Chant" "BOOM HEADSHOT" "CSGO - Bomb Planted" "CSGO - CT Win" "CSGO - T Win" \
+			"Cant Hurt Me" "CHOCOLATE!" "Chris Hansen" "Concentrate" "Dab Distorted" "Dirty Jobs" "Discord - Message" "Discord - Incoming Call" \
+			"Discord - Joining (3x)" "Drinking Problem" "FBI Open Up" "Get To Choppa" "Gotcha Bitch" \
 			"I See Dead People" "Its My Money" "Kinky?!?" "Lahey - Clock's Tickin" "Lahey - Drunk/Sober Enough" \
 			"Lahey - I Condemn This" "Medic!" "Mr. Meeseeks" "My Leg" "Nice Reeeaal Nice" "OOF" "NOT THE BEES!" \
 			"Points Dont Matter" "Price Is Wrong" "Pull The Trigger" "IM THE MOUNTAIN" "RUN AWAY!" \
 			"Sam L Jackson - Look Like Bitch" "Sam L Jackson - Look Like Bitch Aggressive" "Sam L Jackson - Say What" \
 			"Sam L Jackson - Speak English" "Sausages" "Sexual Helicopter" "Virgin In House" "We Got Him" "WORLDSTAR!" \
-			"Yakety Sax" "Zoidberg - Boooo" "Zoidberg - Scuddling" "Quit")
+			"World Star - Mild" "Yakety Sax" "Zoidberg - Boooo" "Zoidberg - Scuddling" "Quit")
 	select voiceinput in "${options[@]}"
 	do
 	case $voiceinput in
@@ -118,10 +118,14 @@ do
 			cp $SCRIPTLOCATION/MicSpams/bill_cosby_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Bill Nye Chant")
 			cp $SCRIPTLOCATION/MicSpams/bill_nye_chant_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"BOOM HEADSHOT")
+			cp $SCRIPTLOCATION/MicSpams/boom_headshot_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Cant Hurt Me")
 			cp $SCRIPTLOCATION/MicSpams/cant_hurt_me_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"CHOCOLATE!")
 			cp $SCRIPTLOCATION/MicSpams/chocolate_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"Chris Hansen")
+			cp $SCRIPTLOCATION/MicSpams/im_chris_hansen_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Concentrate")
 			cp $SCRIPTLOCATION/MicSpams/concentrate_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"CSGO - Bomb Planted")
@@ -148,8 +152,6 @@ do
 			cp $SCRIPTLOCATION/MicSpams/get_to_choppa_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Gotcha Bitch")
 			cp $SCRIPTLOCATION/MicSpams/gotcha_bitch_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
-		"Chris Hansen")
-			cp $SCRIPTLOCATION/MicSpams/im_chris_hansen_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"I See Dead People")
 			cp $SCRIPTLOCATION/MicSpams/i_see_dead_people_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Its My Money")
@@ -202,6 +204,8 @@ do
 			cp $SCRIPTLOCATION/MicSpams/we_got_him_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"WORLDSTAR!")
 			cp $SCRIPTLOCATION/MicSpams/world_star_spam_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
+		"World Star - Mild")
+			cp $SCRIPTLOCATION/MicSpams/world_star_mild_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Yakety Sax")
 			cp $SCRIPTLOCATION/MicSpams/yakety_sax_voice_input.wav "/home/$USER/.steam/steam/steamapps/common/$GAME/voice_input.wav"; printf "${GREEN}${BOLDFONT}$voiceinput${NORMALFONT}${NC} entered"; break;;
 		"Zoidberg - Boooo")
