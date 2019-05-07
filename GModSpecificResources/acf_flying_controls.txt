@@ -17,3 +17,8 @@ F (hold)	=	Night vision
 ######################
 CTRL = First/Third person view
 
+
+# BRADLEY TANK
+##############
+0	=	Open rear gate. Center rear seat = driver
+
