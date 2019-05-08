@@ -22,3 +22,9 @@ CTRL = First/Third person view
 ##############
 0	=	Open rear gate. Center rear seat = driver
 
+
+# ON FOOT
+#########
+prone_config in console to view options
+
+
