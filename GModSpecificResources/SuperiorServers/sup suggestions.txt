@@ -1,0 +1,15 @@
+Disguises should only demote you to your original class
+
+pickpocketing / ziptying / metal detector infront of cop shloundt auto want
+	its their job to do these things, makes it OP 
+	auto wants even if cop isnt paying attention
+
+prop blocking jails = no different than prop blocking bases
+
+the popups of who's wanted should be disable-able
+
+jail shouldnt remove hp buffs
+
+player names should be the same in game as on forums (pull from same db)....shits confusing
+	website profiles should list all previous aliases of players cuz confusing...
+
