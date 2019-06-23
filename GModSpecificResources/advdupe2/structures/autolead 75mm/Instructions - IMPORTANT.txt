@@ -1,0 +1,10 @@
+Steps to operating this weapon
+
+1. spawn frozen
+2. proceed to no collide each gun one by one
+3. type /lock name in the chat 
+4. numpad 1 to fire.
+
+Usefull tips: Use an ESP to track the jets better. Make sure your not shooting at a guy behind a building
+
+this can take out anything as long as its not a raivtol.
