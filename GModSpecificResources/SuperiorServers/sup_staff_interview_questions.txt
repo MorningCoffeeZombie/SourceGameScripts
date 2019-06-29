@@ -1,0 +1,46 @@
+
+###########
+# MODERATOR
+###########
+
+Mod Acceptance Questionaire
+https://forms.gle/dAudyT5SJyehAeda7
+
+Can mayor overwrite default laws? (BMI making legal)
+	No
+
+Can hitman kill mayor during mayor's grace?
+	No
+
+Can you kill someone actively trying to ziptie you?
+	Yes
+
+If a cop swings red baton at someone can you demote them?
+	Yes, assault
+
+If a player with a gun license kills a banned can they be arrested?
+	No
+
+How long before you re-raid the same base?
+	10min
+
+As a hotel tenant, if a fellow tenant is being raided can you defend?
+	Yes?
+
+Can you demote a cook for not having a microwave?
+	No
+
+Can a gangster raid with mob boss?
+	Yes
+
+How many fading doors per base?
+	3 max
+
+What is the golden rule?
+	"Common sense"
+
+
+
+
+
+
