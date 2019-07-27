@@ -1,0 +1,36 @@
+"TableToKeyValues"
+{
+	"parentid"		"0"
+	"icon"		"icon16/application_osx_terminal.png"
+	"id"		"5"
+	"contents"
+	{
+		"1"
+		{
+			"type"		"model"
+			"model"		"models/props_phx/misc/potato_launcher_cap.mdl"
+		}
+		"2"
+		{
+			"type"		"model"
+			"model"		"models/props_phx/wheels/metal_wheel1.mdl"
+		}
+		"3"
+		{
+			"type"		"model"
+			"model"		"models/props_c17/furnitureStove001a.mdl"
+		}
+		"4"
+		{
+			"type"		"model"
+			"model"		"models/props_wasteland/prison_bedframe001b.mdl"
+		}
+		"5"
+		{
+			"type"		"model"
+			"model"		"models/props_junk/PushCart01a.mdl"
+		}
+	}
+	"name"		"ServerDowns"
+	"version"		"3"
+}
