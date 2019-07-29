@@ -2,6 +2,7 @@
 ######
 E+R	=	prime boosters for take off
 		hold W while priming and CTRL to finally launch
+ENTER	=	alternate take off
 CTRL or SPACE	=	take off
 CTRL	=	switch control mode (WASD vs. Mouse)
 V	=	go third person
