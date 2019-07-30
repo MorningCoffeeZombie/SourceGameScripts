@@ -13,3 +13,44 @@ jail shouldnt remove hp buffs
 player names should be the same in game as on forums (pull from same db)....shits confusing
 	website profiles should list all previous aliases of players cuz confusing...
 
+
+
+
+
+HOW COPS ARE OP
+	* They have a built-in aimbot that autowants anyone in their visinity committing a crime
+		* Takes the immersion/RP out of their hands
+	* Spawn with a bunch of free guns/sweps and ammo
+	* Access to unlimited free armor
+	* May alter their genome to be extrodinarily fast
+	* Arrest baton is a 1-hit arrest stick, there's very little you can do to counter it
+	* Battering ram is more powerful (and infinitely cheaper) than C4
+	* PD may return to raids
+	* Often break the server rules by placing >1 fading door in the PD
+		* Mayor gets 3, Cheif gets 1...
+	* Are allowed to block off entire sections of the map with a metal detector checkpoint
+	* Can raid a base just because a fugitive's name is on the door, regardless if they "know" that the fugitive isn't in there
+		* The collateral effect of this is tremendious. Now all other, previously innocent residents must fend off a police raid
+	* Are essentially able to raid any base they like if they see bullets coming out of it
+		* This might break metagaming rules...but it happens
+		* I'm not going to point fingers here but you know who you are
+	* Are frequently immune from mayors laws
+	* 15 cops + 1 Cheif + 1 Mayor make government jobs by far the highest ratio of player availability
+		* The server averages somewhere between 100-120 total players, this means government may take up 14%-17% of the population, which is more than any other (usefull) class.
+Players who are arrested loose their armor/guns/HP perks
+
+    Loosing armor and guns makes sense because their confiscated IRL
+        How do cops reset your health to 100?
+    You loose everything and they don't even provide you with 100 hunger in the cells
+        "3 hots and a cot"
+
+
+
+
+
+
+
+
+
+
+

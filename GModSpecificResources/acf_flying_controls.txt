@@ -12,6 +12,7 @@ RIGHT CLICK	=	main bomb
 '+walk'	=	flairs
 'scroll out mousewheel'	=	retract 3rd person
 F (hold)	=	Night vision
+F (press)	=	Lock-on
 
 
 # HALF LIFE 2 VEHICLES
