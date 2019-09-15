@@ -1,0 +1,1 @@
+{"1":2.0,"2":1.0,"+reload":1.0,"3":1.0,"grenadeType":0.0,"wepClass":"cw_l85a2"}

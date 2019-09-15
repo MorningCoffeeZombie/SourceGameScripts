@@ -1,0 +1,1 @@
+{"+reload":1.0,"1":1.0,"wepClass":"cw_mr96","grenadeType":0.0}

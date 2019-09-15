@@ -1,0 +1,1 @@
+{"2":2.0,"+reload":1.0,"grenadeType":0.0,"wepClass":"cw_dpe_usp40"}
