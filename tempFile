@@ -1,5 +1,52 @@
-// Mic Spams to Add
-// WORLD STAR!!!
+
+
+
++score
+-score
++showscores
+-showscores
+sk_battery	15	// default 15
+sv_allowupload	1	// default 1
+sv_contact		// Contact email for server sysop
+sv_downloadurl	0	// Location from which clients can download missing files
+sv_timeout 180	// After this many seconds without a message from a client, the client is dropped
+sv_visiblemaxplayers -1	// Overrides the max players reported to prospective clients
+play	// cmd. Play a sound.
+
+
+
+try pp_ commands on dt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+////////////////////////////////////////////////
+////////////////////////////////////////////////
+////////////////////////////////////////////////
 
 
 
