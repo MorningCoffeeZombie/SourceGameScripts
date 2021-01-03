@@ -1,0 +1,17 @@
+{
+	"name":"Loot has Value",
+	"description":"Makes changes to money values to suit my personal qualms",
+	"author":"uwu - original author is marijn211",
+	"contact":"N/A",
+	"version":"2.0",
+	"color": "40 40 255",
+	"image" : "mod.png",
+	"blt_version": 2,
+	"hooks" :
+	[
+		{	"hook_id":"lib/tweak_data/moneytweakdata",
+		 	"script_path":"lootvalue.lua"
+		}
+		
+	]
+}

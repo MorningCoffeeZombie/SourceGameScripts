@@ -1,0 +1,57 @@
+{
+	"menu_id": "m_playerdrop",
+	"parent_menu_id": "lua_mod_options_menu",
+	"title": "playerdrop_menu_title",
+	"description": "playerdrop_menu_desc",
+	"back_callback": "playerdrop_save",
+	"items": [
+		{
+			"type": "toggle",
+			"id": "drop_ammo",
+			"title": "playerdrop_ammo_title",
+			"description": "playerdrop_ammo_desc",
+			"callback": "playerdrop_toggle",
+			"value": "drop_ammo"
+			},
+		{
+			"type": "toggle",
+			"id": "drop_doctor",
+			"title": "playerdrop_doctor_title",
+			"description": "playerdrop_doctor_desc",
+			"callback": "playerdrop_toggle",
+			"value": "drop_doctor"
+			},
+		{
+			"type": "toggle",
+			"id": "drop_firstaid",
+			"title": "playerdrop_firstaid_title",
+			"description": "playerdrop_firstaid_desc",
+			"callback": "playerdrop_toggle",
+			"value": "drop_firstaid"
+			},
+		{
+			"type": "toggle",
+			"id": "drop_bodybag",
+			"title": "playerdrop_bodybag_title",
+			"description": "playerdrop_bodybag_desc",
+			"callback": "playerdrop_toggle",
+			"value": "drop_bodybag"
+			},
+		{
+			"type": "toggle",
+			"id": "drop_ecm",
+			"title": "playerdrop_ecm_title",
+			"description": "playerdrop_ecm_desc",
+			"callback": "playerdrop_toggle",
+			"value": "drop_ecm"
+			},
+		{
+			"type": "toggle",
+			"id": "drop_sentry",
+			"title": "playerdrop_sentry_title",
+			"description": "playerdrop_sentry_desc",
+			"callback": "playerdrop_toggle",
+			"value": "drop_sentry"
+			}
+		]
+	}

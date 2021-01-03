@@ -1,0 +1,1 @@
+{"drop_ammo":true,"drop_doctor":true,"drop_ecm":true,"drop_sentry":true,"drop_bodybag":true,"drop_firstaid":true}

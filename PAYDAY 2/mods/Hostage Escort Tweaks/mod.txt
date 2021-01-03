@@ -1,0 +1,19 @@
+{
+    "name" : "Hostage Escort Tweaks",
+    "description" : "Maximum number of following hostage is 15; maximum hostage follow distance changed from 20m to 200m; follow threshold from 5m to 1.25m; doubled hostage movement speed.",
+	"author" : "Maelform",
+	"hooks" : [
+    {   
+        "hook_id" : "lib/tweak_data/playertweakdata",
+        "script_path" : "hostageescorttweaks.lua"
+    },
+	{   
+        "hook_id" : "lib/tweak_data/charactertweakdata",
+        "script_path" : "hostageescorttweaks.lua"
+    },
+	{   
+        "hook_id" : "lib/units/civilians/civilianbrain",
+        "script_path" : "hostageescorttweaks.lua"
+    }
+	]
+}

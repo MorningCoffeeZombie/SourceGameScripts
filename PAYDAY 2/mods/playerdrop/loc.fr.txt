@@ -1,0 +1,16 @@
+{
+	"playerdrop_menu_title": "Configurer Playerdrop",
+	"playerdrop_menu_desc": "Selectionner quel équipement n'est pas enlevé quand les joueurs quittent la partie.",
+	"playerdrop_ammo_title": "Sac de munitions",
+	"playerdrop_ammo_desc": "Activer en permanance les sacs de munitions.",
+	"playerdrop_doctor_title": "Sac médical",
+	"playerdrop_doctor_desc": "Activer en permanance les sacs médicaux.",
+	"playerdrop_firstaid_title": "Kit de premiers soins",
+	"playerdrop_firstaid_desc": "Activer en permanance les kits de premiers soins.",
+	"playerdrop_bodybag_title": "Valise de sacs mortuaires",
+	"playerdrop_bodybag_desc": "Activer en permanance les valises de sacs mortuaires.",
+	"playerdrop_ecm_title": "Brouilleur CME",
+	"playerdrop_ecm_desc": "Activer en permanance les brouilleurs CME.",
+	"playerdrop_sentry_title": "Tourelle",
+	"playerdrop_sentry_desc": "Activer en permanance les tourelles.",
+	}

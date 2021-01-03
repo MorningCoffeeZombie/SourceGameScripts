@@ -1,0 +1,16 @@
+{
+	"playerdrop_menu_title": "Configure Playerdrop",
+	"playerdrop_menu_desc": "Select which deployables are unaffected by players leaving.",
+	"playerdrop_ammo_title": "Ammo Bags",
+	"playerdrop_ammo_desc": "Enable persistent ammo bags.",
+	"playerdrop_doctor_title": "Doctor Bags",
+	"playerdrop_doctor_desc": "Enable persistent doctor bags.",
+	"playerdrop_firstaid_title": "First Aid Kits",
+	"playerdrop_firstaid_desc": "Enable persistent first aid kits.",
+	"playerdrop_bodybag_title": "Body Bag Cases",
+	"playerdrop_bodybag_desc": "Enable persistent body bag cases.",
+	"playerdrop_ecm_title": "ECM Jammers",
+	"playerdrop_ecm_desc": "Enable persistent ECM jammers.",
+	"playerdrop_sentry_title": "Sentry Guns",
+	"playerdrop_sentry_desc": "Enable persistent sentry guns.",
+	}

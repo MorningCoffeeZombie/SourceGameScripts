@@ -1,0 +1,9 @@
+{
+	"name" : "Sprint with any bag",
+	"description" : "Lets you sprint with any bag",
+	"author" : "Pickpocket",
+	"priority" : 10000,
+	"hooks" : [
+		{"hook_id" : "lib/tweak_data/carrytweakdata", "script_path" : "mod.lua"}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"name": "Limit Bot Downs",
+	"description": "Limits the amount of downs for bots",
+	"author": "Peacemaker",
+	"version": "1.0",
+	"blt_version": 2,
+	"color": "150 70 70",
+	"hooks": [
+		{
+			"hook_id": "lib/units/player_team/teamaidamage",
+			"script_path": "bots.lua"
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+  	"name" : "Less Cops",
+    "description" : "brap",
+    "author" : "Arktomys"
+	"contact" : "http://steamcommunity.com/id/arktomys/",
+	"version" : "2.0",
+	"blt_version" : 2
+	"image"	: "lesscops.png",
+	"hooks" : [
+
+   { "hook_id" : "lib/tweak_data/groupaitweakdata", "script_path" : "groupaitweakdata.lua" }
+
+
+]
+}

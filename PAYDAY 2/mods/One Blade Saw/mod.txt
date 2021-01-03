@@ -1,0 +1,14 @@
+  {
+  	"name" : "One Blade Saw",
+    "description" : "The Total Ammo Of The Saw Is In One Blade",
+	"author" : "Fmg",
+	"contact" : "Fmg#8110",
+	"version" : "1.0",
+	"blt_version" : 2,
+	"hooks" : [
+    {  
+      "hook_id": "lib/tweak_data/weapontweakdata",
+      "script_path" : "OneBladeSaw.lua"
+    }
+    ]
+}
