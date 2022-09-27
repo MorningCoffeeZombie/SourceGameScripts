@@ -1,0 +1,74 @@
+Slick (transport)
+	2x door M60s
+UH-1M (ground attack)
+	Miniguns
+	Miniguns - door
+	19x pods
+Wandering Soul (psyops)	(UH-1P??)
+	2x door M60s
+	Stereo in place of rocket pods
+UH-1V MedEvac (humanitarian)
+	also UH-1D was a medivac (at least in earlier part of war)
+	[Nothing]
+HH-1H search and rescue (SAR)
+	Rescue Hoist
+
+
+
+
+
+
+
+
+
+
+
+
+
+BASE WEIGHT HUEY:	6356
+1 FRONT MINIGUN:	322
+2 FRONT MINIGUNS:	646
+1 DOOR MINIGUN:		595
+2 DOOR MINIGUNS:	1193
+1 DOOR M60:			311
+2 DOOR M60s:		624
+1 7x POD:			247
+2 7x PODS:			494
+1 19x POD:			522
+2 19x PODS:			1045
+1% FUEL:			13
+25% FUEL:			348
+50% FUEL:			697
+75% FUEL:			1043
+100% FUEL:			1391
+
+Example assuming 2x side door removal saves 350lbs total:
+	UH-1M (19x Pods, Front Minis, Side M60s): 63% Max Fuel -> 85% Max Fuel
+
+* Ammo type of rocket pods does not affect weight in-game (aside from 7x vs. 19x pods).
+* Minivan doors weight 120-150lbs each (for comparison). 
+
+
+Often times flight crews would fully remove the rear side doors to reduce weight. The heat of Vietnam and the necessity to have guns ready made the doors unnecessary. Removing doors saves weight. Minivan doors weigh 120-150lbs; although they have amenities not found in a Huey (arm rests, electric locks, power windows, etc.) the doors on a Huey are larger. I will assume a total weight reduction of 350lbs on this basis. If we remove the doors from a UH-1 we can greatly increase the carrying capacity without sacrificing immersion/realism. 
+
+Currently the UH-1 cannot carry a full load out of weaponry with a respectable amount of fuel. UH-1M models of the huey were created for the primary task of ground assault and held a large payload and operated in similar eras. Although they had stronger engines than the UH-1H, for video game purposes, it would be nice to 'convert' between the two via weight reduction. 
+
+
+
+
+
+
+
+
+
+MK1. Inert warhead practice rocket.
+MK5. High explosive anti-tank warhead.
+M151. Anti-personnel fragmentation warhead.
+M156. White phosphorus smoke warhead.
+M257. Parachute-retarded illumination flare.
+M274. Training smoke marker.
+
+
+
+
+
