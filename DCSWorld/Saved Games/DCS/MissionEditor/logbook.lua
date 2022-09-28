@@ -103,11 +103,11 @@ logbook =
                     ["naval"] = 0,
                     ["landings"] = 0,
                 }, -- end of ["Su-25T"]
-                ["agKills"] = 2201,
-                ["killRatio"] = "2419/100",
+                ["agKills"] = 2266,
+                ["killRatio"] = "2488/100",
                 ["missionsCount"] = 3,
                 ["ejections"] = 0,
-                ["totalScore"] = 35168,
+                ["totalScore"] = 36607,
                 ["Mi-24P"] = 
                 {
                     ["flightHours"] = 1426.446,
@@ -123,10 +123,10 @@ logbook =
                     ["naval"] = 0,
                     ["aaKills"] = 0,
                 }, -- end of ["Mi-24P"]
-                ["flightHours"] = 175248.94,
-                ["daytime"] = 139133.481,
+                ["flightHours"] = 179623.318,
+                ["daytime"] = 143507.859,
                 ["commissioned"] = "08/16/22",
-                ["naval"] = 94,
+                ["naval"] = 98,
                 ["campaignsCount"] = 0,
                 ["static"] = 120,
                 ["TF-51D"] = 
@@ -146,25 +146,25 @@ logbook =
                 }, -- end of ["TF-51D"]
                 ["deaths"] = 100,
                 ["fagKills"] = 3,
-                ["landings"] = 144,
+                ["landings"] = 150,
                 ["aaKills"] = 4,
                 ["refuelings"] = 0,
                 ["nighttime"] = 36115.459,
                 ["faaKills"] = 0,
                 ["UH-1H"] = 
                 {
-                    ["flightHours"] = 171415.824,
+                    ["flightHours"] = 175790.202,
                     ["deaths"] = 87,
-                    ["agKills"] = 2201,
+                    ["agKills"] = 2266,
                     ["static"] = 120,
                     ["aaKills"] = 4,
                     ["ejections"] = 0,
-                    ["landings"] = 141,
+                    ["landings"] = 147,
                     ["refuelings"] = 0,
                     ["nighttime"] = 36115.459,
-                    ["totalScore"] = 1031,
-                    ["naval"] = 94,
-                    ["daytime"] = 135300.365,
+                    ["totalScore"] = 2470,
+                    ["naval"] = 98,
+                    ["daytime"] = 139674.743,
                 }, -- end of ["UH-1H"]
                 ["UH-60L"] = 
                 {

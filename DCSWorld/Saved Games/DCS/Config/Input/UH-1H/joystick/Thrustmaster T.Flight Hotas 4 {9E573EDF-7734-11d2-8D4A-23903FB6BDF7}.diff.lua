@@ -66,6 +66,72 @@ local diff = {
 			},
 			["name"] = "Autopilot LEVEL FLIGHT",
 		},
+		["d3037pnilunilcd7vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "Search light On",
+		},
+		["d3039pnilunilcd9vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "AI Operator ROE Iterate",
+		},
+		["d511pnilu515cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_L",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "Search light Left",
+		},
+		["d512pnilu515cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_R",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "Search light Right",
+		},
+		["d513pnilu515cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_D",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "Search light Retract",
+		},
+		["d514pnilu515cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_U",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "Search light Extend",
+		},
 		["d84pnilu84cdnilvd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
