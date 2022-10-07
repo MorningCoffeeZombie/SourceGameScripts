@@ -52,7 +52,7 @@ local _msgTime = 10
 
 static = {}
 local staticDB = {}
-local staticPrefix = ""
+local staticPrefix = "LA"
 local _info = function(msg,...) if _logMsg then env.info("**simpleStatic info:** "..string.format(msg,...)) end end
 local _error = function(msg,...) if _logMsg then env.info("**simpleStatic error:** "..string.format(msg,...)) end end
 local _msg = function(msg,...) if _gameMsg then trigger.action.outText(string.format(msg,...), _msgTime) end end
