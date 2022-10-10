@@ -34,6 +34,17 @@ local diff = {
 				},
 			},
 		},
+		["d3014pnilunilcd50vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+					["reformers"] = {
+						[1] = "JOY_BTN11",
+					},
+				},
+			},
+			["name"] = "Chaff Mode Switch",
+		},
 		["d3018pnilu3018cd3vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
